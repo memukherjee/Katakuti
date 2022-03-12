@@ -1,0 +1,86 @@
+body {
+  text-align: center;
+  margin: 0;
+}
+
+#message{
+  font-family: 'Press Start 2P', cursive;
+  font-size: 2rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  gap: 5px;
+  width: fit-content;
+  margin: auto;
+}
+
+.grid-item {
+  height: 100px;
+  line-height: 100px;
+}
+
+.grid-item:hover {
+  background-color: rgba(146, 146, 146, 0.753);
+}
+
+#grid-1,
+#grid-2,
+#grid-4,
+#grid-5,
+#grid-7,
+#grid-8 {
+  border-right: 1px solid #000;
+}
+
+#grid-2,
+#grid-3,
+#grid-5,
+#grid-6,
+#grid-8,
+#grid-9 {
+  border-left: 1px solid #000;
+}
+
+#grid-4,
+#grid-5,
+#grid-6,
+#grid-7,
+#grid-8,
+#grid-9 {
+  border-top: 1px solid #000;
+}
+
+#grid-1,
+#grid-2,
+#grid-3,
+#grid-4,
+#grid-5,
+#grid-6 {
+  border-bottom: 1px solid #000;
+}
+
+
+#restart{
+  width: 100px;
+  height: 50px;
+  margin: auto;
+  margin-top: 5%;
+  border-radius: 20px;
+  border: 3px solid #000;
+  background-color: #fff;
+  box-shadow: 0 6px #999;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 1.5rem;
+}
+
+#restart:disabled{
+  border-color: #c0bebc;
+  box-shadow: 0 6px #c0bebc;
+}
+
+#restart:active {
+  box-shadow: 0 2px #666;
+  transform: translateY(4px);
+}
